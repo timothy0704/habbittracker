@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+    </header>
+    
+    <main>
+        <section id="auth-section">
+            <h2>Sign Up / Login</h2>
+            <form id="signup-form">
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        
+        <section id="habit-overview">
+            <h2>Habit Overview</h2>
+            <p>Total Habits: <span id="total-habits">0</span></p>
+            <p>Completed Today: <span id="completed-habits">0</span></p>
+        </section>
+        
+        <section id="habit-list"></section>
+        
+        <section id="add-habit">
+            <h2>Add New Habit</h2>
+            <form id="habit-form">
+                <input type="text" id="habit-name" placeholder="Enter habit name" required>
+                <select id="habit-category">
+                    <option value="health">Health</option>
+                    <option value="productivity">Productivity</option>
+                    <option value="learning">Learning</option>
+                </select>
+                <select id="habit-frequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                </select>
+                <button type="submit">Add Habit</button>
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
